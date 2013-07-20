@@ -1,0 +1,61 @@
+/* ==========================================================================
+   Mixins used in responsive webdesign
+   ========================================================================== */
+
+/**
+ * Variables
+ *
+ * It is recommended to override these.
+ *
+ * 1. List of available breakpoints.
+ */
+
+$bits-responsive-breakpoints: /* 1 */ (
+  (v2 "(min-width: 25em)")
+  (v3 "(min-width: 50em)")
+) !default;
+
+/**
+ * Inserts media query
+ *
+ * --------------
+ * Example usage:
+ *
+ * $bits-responsive-breakpoints: (
+ *   (v2 "min-width: 25em")
+ *   (v3 "min-width: 50em")
+ * );
+ *
+ * @include breakpoint(v2) {
+ *   .example {
+ *     text-align: center;
+ *   }
+ * }
+ *
+ * @include breakpoint(v3) {
+ *   .example {
+ *     text-align: right;
+ *   }
+ * }
+ */
+
+@mixin breakpoint($name) {
+  $breakpoint-found: false;
+
+  @each $breakpoint in $bits-responsive-breakpoints {
+    $breakpoint-name: nth($breakpoint, 1);
+    $media-query: nth($breakpoint, 2);
+
+    @if $name == $breakpoint-name {
+      $breakpoint-found: true;
+
+      @media only screen and #{$media-query} {
+        @content;
+      }
+    }
+  }
+
+  @if $breakpoint-found == false {
+    @warn "Breakpoint ‘#{$name}’ does not exist.";
+  }
+}
