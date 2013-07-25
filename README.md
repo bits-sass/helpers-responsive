@@ -1,14 +1,14 @@
-# Bits.sass mixins: responsive
+# Bits.sass helpers: responsive
 
-Collection of responsive web design mixins. See [other mixins](https://github.com/bits-sass/mixins).
+Collection of responsive web design functions and mixins. See [other helpers](https://github.com/bits-sass/helpers).
 
 Read more about [Bits.sass toolkit](https://github.com/bits-sass/bits.sass).
 
 ## Installation
 
-* __Bower:__ `bower install --save bits-sass-mixins-responsive`
-* __Download:__ [zip](https://github.com/bits-sass/mixins-responsive/zipball/master), [tar.gz](https://github.com/bits-sass/mixins-responsive/tarball/master)
-* __Git:__ `git clone https://github.com/bits-sass/mixins-responsive.git`
+* __Bower:__ `bower install --save bits-sass-helpers-responsive`
+* __Download:__ [zip](https://github.com/bits-sass/helpers-responsive/zipball/master), [tar.gz](https://github.com/bits-sass/helpers-responsive/tarball/master)
+* __Git:__ `git clone https://github.com/bits-sass/helpers-responsive.git`
 
 ## Available SASS variables
 

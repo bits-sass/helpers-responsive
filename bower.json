@@ -1,6 +1,6 @@
 {
-  "name": "bits-sass-mixins-responsive",
-  "version": "0.1.0",
+  "name": "bits-sass-helpers-responsive",
+  "version": "0.2.0",
   "author": "Lukáš Mladý",
   "main": "_responsive.scss"
 }
