@@ -13,6 +13,8 @@ Read more about [Bits.sass toolkit](https://github.com/bits-sass/bits.sass).
 ## Available SASS variables
 
 * `bits-responsive-breakpoints` - list of used breakpoints
+* `bits-old-ie` - boolean indicating whether this is a stylesheet for old IE
+* `bits-old-ie-breakpoints` - list of included breakpoints for old IE
 
 ## Available mixins
 
