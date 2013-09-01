@@ -59,7 +59,7 @@ $bits-old-ie-breakpoints: () !default; /* 3 */
     @if $name == $breakpoint-name {
       $breakpoint-found: true;
 
-      @if $bits-old-ie == true { /* 1 */
+      @if $bits-old-ie == true {
         @each $ie-bp in $bits-old-ie-breakpoints {
           @if $name == $ie-bp {
             @content;
