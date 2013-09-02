@@ -2,24 +2,25 @@
    Helpers used in responsive webdesign
    ========================================================================== */
 
+/* Variables
+   ========================================================================== */
+
 /**
- * Variables
- *
- * It is recommended to override these.
- *
- * 1. List of available breakpoints.
- * 2. If it is an old IE, don't serve any media query.
- * 3. If it is an old IE, what breakpoints to include.
+ * List of available breakpoints
  */
 
-$bits-responsive-breakpoints: /* 1 */ (
+$bits-responsive-breakpoints: (
   (v2 "(min-width: 25em)")
   (v3 "(min-width: 50em)")
 ) !default;
 
-$bits-old-ie: false !default; /* 2 */
-$bits-old-ie-breakpoints: () !default; /* 3 */
+/**
+ * 1. If it is an old IE, don't serve any media query.
+ * 2. If it is an old IE, what breakpoints to include.
+ */
 
+$bits-old-ie: false !default; /* 1 */
+$bits-old-ie-breakpoints: () !default; /* 2 */
 
 /* Mixins
    ========================================================================== */
@@ -27,9 +28,7 @@ $bits-old-ie-breakpoints: () !default; /* 3 */
 /**
  * Insert media query
  *
- * --------------
- * Example usage:
- * --------------
+ * Example:
  *
  * $bits-responsive-breakpoints: (
  *   (v2 "min-width: 25em")
